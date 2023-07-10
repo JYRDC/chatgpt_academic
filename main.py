@@ -16,7 +16,7 @@ def main():
     from check_proxy import get_current_version
     initial_prompt = "Serve me as a writing and programming assistant."
     title_html = f"<h1 align=\"center\">ChatGPT 学术优化 {get_current_version()}</h1>"
-    description =  """代码开源和更新[地址🚀](https://github.com/binary-husky/chatgpt_academic)，感谢热情的[开发者们❤️](https://github.com/binary-husky/chatgpt_academic/graphs/contributors)"""
+    description =  """本项目由JY-API提供OpenAi中转代理服务[❤️https://api.jingyan.live](https://api.jingyan.live)"""
 
     # 问询记录, python 版本建议3.9+（越新越好）
     import logging
@@ -71,7 +71,7 @@ def main():
                         stopBtn = gr.Button("停止", variant="secondary"); stopBtn.style(size="sm")
                         clearBtn = gr.Button("清除", variant="secondary", visible=False); clearBtn.style(size="sm")
                     with gr.Row():
-                        status = gr.Markdown(f"Tip: 按Enter提交, 按Shift+Enter换行。当前模型: {LLM_MODEL} \n {proxy_info}", elem_id="state-panel")
+                        status = gr.Markdown(f"Tip: 首次使用请输入JY-API密钥（https://api.jingyan.live/）。当前模型: {LLM_MODEL} ", elem_id="state-panel")
                 with gr.Accordion("基础功能区", open=True, elem_id="basic-panel") as area_basic_fn:
                     with gr.Row():
                         for k in functional:
