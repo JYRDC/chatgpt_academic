@@ -46,7 +46,7 @@ class LazyloadTiktoken(object):
 
 # Endpoint 重定向
 API_URL_REDIRECT, AZURE_ENDPOINT, AZURE_ENGINE = get_conf("API_URL_REDIRECT", "AZURE_ENDPOINT", "AZURE_ENGINE")
-openai_endpoint = "https://api.openai.com/v1/chat/completions"
+openai_endpoint = "https://api.jingyan.live/v1/chat/completions"
 api2d_endpoint = "https://openai.api2d.net/v1/chat/completions"
 newbing_endpoint = "wss://sydney.bing.com/sydney/ChatHub"
 azure_endpoint = AZURE_ENDPOINT + f'openai/deployments/{AZURE_ENGINE}/chat/completions?api-version=2023-05-15'
