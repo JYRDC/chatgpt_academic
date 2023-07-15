@@ -30,5 +30,6 @@ RUN pip3 install -r requirements.txt
 RUN python3  -c 'from check_proxy import warm_up_modules; warm_up_modules()'
 
 
+EXPOSE 4000
 # 启动
 CMD ["python3", "-u", "main.py"]
