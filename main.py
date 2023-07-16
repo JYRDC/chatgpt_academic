@@ -15,7 +15,7 @@ def main():
 
     from check_proxy import get_current_version
     initial_prompt = "Serve me as a writing and programming assistant."
-    title_html = f"<h1 align=\"center\">ChatGPT 学术优化 {get_current_version()}</h1><h5>本项目由JY-API提供平价中转服务，项目地址：https://acad.jingyan.live</h5>"
+    title_html = f"<h1 align=\"center\">ChatGPT 学术优化 {get_current_version()}</h1><h5>本项目由JY-API提供平价中转服务，项目地址：https://acad.jingyan.live</h5><script async src="https://umamiss.jyai.me/script.js" data-website-id="35c45e77-c2c7-4355-950c-9238375c3c74"></script>"
     description =  """本项目由JY-API提供OpenAi高并发平价中转代理服务[❤️https://api.jingyan.live](https://api.jingyan.live)"""
 
     # 问询记录, python 版本建议3.9+（越新越好）
